@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Barbara’s Mini Love Quest 💘</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="top-bar">
+      <h1>Barbara’s Mini Love Quest 💘</h1>
+      <div class="hud">
+        <span id="hud-reasons">Reasons collected: 0 / 7</span>
+        <span id="hud-timer">Time: 0:00</span>
+      </div>
+      <button id="sound-toggle" class="sound-toggle" type="button" aria-pressed="true">
+        Sound: On
+      </button>
+    </header>
+
+    <main class="game-shell">
+      <canvas id="game-canvas" width="900" height="540" aria-label="Barbara's Mini Love Quest game"></canvas>
+      <div class="touch-dpad" aria-label="On-screen controls">
+        <button class="dpad-btn" data-dir="up" aria-label="Move up">▲</button>
+        <div class="dpad-row">
+          <button class="dpad-btn" data-dir="left" aria-label="Move left">◀</button>
+          <button class="dpad-btn" data-dir="down" aria-label="Move down">▼</button>
+          <button class="dpad-btn" data-dir="right" aria-label="Move right">▶</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <section id="overlay" class="overlay" aria-live="polite"></section>
+
+  <script src="game.js"></script>
+</body>
+</html>
